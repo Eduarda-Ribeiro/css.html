@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Sabor caseiro
+        </title>
+        <meta UTF="8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="my.css">
+    </head>
+    <body>
+      <main>
+           <form method="post">
+              <h1>Cadastro das receitas para o Concurso 'Doce Sonho' 3ª Edição</h1>
+                <fieldset>
+                  <h3>Informações Pessoais</h3><br>
+                     <label>Qual seu nome completo?</label>
+                     <input type="text" id="nome" name="nome" required><br>
+                     <label>Qual sua idade?</label>
+                     <input type="number" id="idade" name="idade" required><br>
+                     <label>Digite seu CPF:</label>
+                     <input type="number" id="cpf" name="cpf" required maxlength="11"><br>
+                     <label>Digite seu RG:</label>
+                     <input type="number" id="rg" name="rg" required maxlength="7"><br>
+                     <label>Email para contato:</label>
+                     <input type="email" id="cont" name="cont" required><br>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                   <h3>As Receitas:</h3><br>
+                    <label>Qual o nome da sua sobremesa?</label>
+                    <input type="text" id="doce" name="doce" required><br>
+                    <label>Insira aqui o arquivo, em PDF, de sua receita:</label>
+                    <input type="file" id="receita" name="receita"><br><br>
+                    <label>Em qual categoria você irá concorrer?</label>
+                      <ul>
+                          <li><input type="radio" id="vaga" name="vaga" required>
+                          <label>Categoria Infantil (de 9 até 13 anos)</label></li>
+                          <li><input type="radio" id="vaga" name="vaga" required>
+                          <label>Categoria Juvenil (de 14 até 17 anos)</label></li>
+                          <li><input type="radio" id="vaga" name="vaga" required>
+                          <label>Categoria Adulto (apartir de 18 anos)</label></li>
+                      </ul><br>
+                    <input type="submit">
+                   
+                </fieldset>
+          </form>
+      </main>
+    </body>
+</html>
